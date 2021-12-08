@@ -1,0 +1,37 @@
+:root{
+  --white: #FFF;
+  --primary: #FF6600;
+  --secondary: #FFC000;
+  --lightgrey: #CFCDB4;
+  --darkblue: #1F3447;
+  --lightblue: #6D8EAD;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  width: 70vw;
+  height: 70vh;
+  margin: 0 auto;
+  background-image: url(../src/assets/emconstrucao.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
