@@ -17,7 +17,7 @@ const Income = ({ history, location }) => {
     try {
       
         const response = await Axios.get(
-          "http://localhost:8000/monthly-income",
+          "https://controlei-api.glitch.me/monthly-income",
           {
             headers: {
               "Authorization": "Bearer " + localStorage.getItem("app-token"),
@@ -50,7 +50,7 @@ const Income = ({ history, location }) => {
     try {
       if(id) {
         await Axios.put(
-          "http://localhost:8000/monthly-income",
+          "https://controlei-api.glitch.me/monthly-income",
           { value: income, spendingLimit },
           {
             headers: {
@@ -60,7 +60,7 @@ const Income = ({ history, location }) => {
         );
       }else {
         await Axios.post(
-          "http://localhost:8000/monthly-income",
+          "https://controlei-api.glitch.me/monthly-income",
           { value: income, spendingLimit },
           {
             headers: {

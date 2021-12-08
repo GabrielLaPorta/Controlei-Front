@@ -16,7 +16,7 @@ function Home(props) {
 
   useEffect(async () => {
     await Axios.get(
-      "http://localhost:8000/expenses",
+      "https://controlei-api.glitch.me/expenses",
       {
         headers: {
           "Authorization": "Bearer " + localStorage.getItem("app-token"),
@@ -30,7 +30,7 @@ function Home(props) {
       }
     });
     await Axios.get(
-      "http://localhost:8000/home",
+      "https://controlei-api.glitch.me/home",
       {
         headers: {
           "Authorization": "Bearer " + localStorage.getItem("app-token"),
@@ -48,7 +48,7 @@ function Home(props) {
 
   const deleteExpense = (expense) => {
     Axios.delete(
-      "http://localhost:8000/expenses",
+      "https://controlei-api.glitch.me/expenses",
       {
         headers: {
           "Authorization": "Bearer " + localStorage.getItem("app-token"),

@@ -58,7 +58,7 @@ const AddExpenses = ({ location, history }) => {
     try {
       if(id) {
         const response = await Axios.put(
-          "http://localhost:8000/expenses",
+          "https://controlei-api.glitch.me/expenses",
           { id, value, description, typeId, repeat, monthlyRepetitions, dueDate: dueDate ? moment(dueDate).format() : null },
           {
             headers: {
@@ -68,7 +68,7 @@ const AddExpenses = ({ location, history }) => {
         );
       } else {
         const response = await Axios.post(
-          "http://localhost:8000/expenses",
+          "https://controlei-api.glitch.me/expenses",
           { value, description, typeId, repeat, monthlyRepetitions, dueDate: dueDate ? moment(dueDate).format() : null },
           {
             headers: {

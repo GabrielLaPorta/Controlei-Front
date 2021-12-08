@@ -21,7 +21,7 @@ const Signup = ({ handleChange, history }) => {
     e.preventDefault()
     if (password2 === password) {
       try {
-        const response = await Axios.post('http://localhost:8000/user', { name, email, password })
+        const response = await Axios.post('https://controlei-api.glitch.me/user', { name, email, password })
         history.push("/entrar")
       } catch (e) {
         console.log('Erro no cadastro')

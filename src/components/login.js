@@ -19,7 +19,7 @@ const Login = ({ history }) => {
   async function handleLogin(e) {
     e.preventDefault();
     try {
-      const response = await Axios.post("http://localhost:8000/login", {
+      const response = await Axios.post("https://controlei-api.glitch.me/login", {
         email,
         password,
       });
